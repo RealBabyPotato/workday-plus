@@ -2,12 +2,15 @@ import { useQuery } from '@tanstack/react-query'
 
 import { fetchHello } from '../../api/hello'
 import { SectionCard } from '../../components/SectionCard'
+import { useState } from 'react';
 
 export function HelloWorldCard() {
   const helloQuery = useQuery({
     queryKey: ['hello'],
     queryFn: fetchHello,
   })
+
+  const [evilNUmber, setEvilNumber] = useState(0);
 
   return (
     <SectionCard
@@ -25,6 +28,8 @@ export function HelloWorldCard() {
                 : 'success'}
           </span>
         </p>
+
+        {evilNUmber}
 
         {helloQuery.isError ? (
           <p className="rounded-lg bg-rose-50 p-3 text-rose-700">

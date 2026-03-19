@@ -9,7 +9,7 @@ export function HomePage() {
           workday-plus
         </p>
         <h1 className="mt-3 max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
-          lean starter for a ubc course planning app
+          hello world
         </h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-slate-300">
           this page is intentionally simple. it proves the frontend runs, the
