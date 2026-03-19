@@ -1,10 +1,15 @@
 {
   "name": "workday-plus",
   "version": "1.0.0",
-  "description": "lgtm",
-  "main": "index.js",
+  "private": true,
+  "description": "lean monorepo for workday-plus",
+  "workspaces": [
+    "apps/web",
+    "packages/contracts"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:web": "npm run dev --workspace web",
+    "build:web": "npm run build --workspace web"
   },
   "repository": {
     "type": "git",
@@ -13,7 +18,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/RealBabyPotato/workday-plus/issues"
   },
