@@ -10,7 +10,7 @@ export function HelloWorldCard() {
     queryFn: fetchHello,
   })
 
-  const [num, setNum] = useState<Number>(0);
+  const [num, setNum] = useState(0);
 
   return (
     <SectionCard
@@ -29,7 +29,7 @@ export function HelloWorldCard() {
           </span>
         </p>
 
-        {evilNUmber}
+        {num}
 
         {helloQuery.isError ? (
           <p className="rounded-lg bg-rose-50 p-3 text-rose-700">
