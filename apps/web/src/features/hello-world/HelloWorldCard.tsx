@@ -25,7 +25,7 @@ export function HelloWorldCard() {
             {helloQuery.isPending
               ? 'loading'
               : helloQuery.isError
-                ? 'error'
+                ? 'errorasdfasdfj'
                 : 'success'}
           </span>
         </p>
