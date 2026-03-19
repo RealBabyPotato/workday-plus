@@ -1,13 +1,16 @@
-import { useQuery } from '@tanstack/react-query'
+import { useQuery, type UseQueryResult } from '@tanstack/react-query'
 
 import { fetchHello } from '../../api/hello'
 import { SectionCard } from '../../components/SectionCard'
+import { useState } from 'react';
 
 export function HelloWorldCard() {
   const helloQuery = useQuery({
     queryKey: ['hello'],
     queryFn: fetchHello,
   })
+
+  const [num, setNum] = useState<Number>(0);
 
   return (
     <SectionCard
