@@ -9,3 +9,7 @@ class HelloResponse(BaseModel):
     message: str
     project: str
     frontend_hint: str
+
+class TestResponse(BaseModel):
+    id: int
+    title: str
