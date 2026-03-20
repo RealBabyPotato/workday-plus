@@ -11,6 +11,7 @@ export function HelloWorldCard() {
   })
 
   const [num, setNum] = useState(0);
+  const [name, setName] = useState<String>("Jaden");
 
   return (
     <SectionCard
@@ -24,12 +25,12 @@ export function HelloWorldCard() {
             {helloQuery.isPending
               ? 'loading'
               : helloQuery.isError
-                ? 'error'
+                ? 'errorasdfasdfj'
                 : 'success'}
           </span>
         </p>
 
-        {num}
+        {num + num.toString()}
 
         {helloQuery.isError ? (
           <p className="rounded-lg bg-rose-50 p-3 text-rose-700">
