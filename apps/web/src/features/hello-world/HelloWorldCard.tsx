@@ -18,6 +18,8 @@ export function HelloWorldCard() {
     queryFn: () => fetchTest(exampleId),
   })
 
+  const [num, setNum] = useState(0);
+  const [name, setName] = useState<String>("Jaden");
 
 
   return (
