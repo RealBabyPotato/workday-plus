@@ -13,3 +13,9 @@ class HelloResponse(BaseModel):
 class TestResponse(BaseModel):
     id: int
     title: str
+
+class Course(BaseModel):
+    name: str
+    credits: int
+    title: str
+    description: str
