@@ -59,7 +59,7 @@ tests/
 
 1. install node.js 20 or newer
 2. install python 3.12 or newer
-3. install postgresql 16 or newer
+3. install postgresql 16 or newer !!! OPTIONAL FOR NOW
 4. install git
 
 easy options:
