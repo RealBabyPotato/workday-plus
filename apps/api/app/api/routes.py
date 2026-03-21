@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from app.schemas.hello import HelloResponse, HealthResponse, TestResponse
-from app.services.hello_service import get_demo_message, get_test_message
+from app.schemas.hello import HelloResponse, HealthResponse, TestResponse, ChungusResponse
+from app.services.hello_service import get_chungus_message, get_demo_message, get_test_message
 
 
 router = APIRouter()
@@ -19,3 +19,7 @@ def hello_demo() -> HelloResponse:
 @router.get("/test/{id}", response_model=TestResponse, tags=["test"])
 def test_route(id: int) -> TestResponse:
     return get_test_message(id)
+
+@router.get("/chungus", response_model=ChungusResponse, tags=["chungus"])
+def chungus() -> ChungusResponse:
+    return get_chungus_message()

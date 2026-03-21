@@ -14,6 +14,11 @@ class TestResponse(BaseModel):
     id: int
     title: str
 
+class ChungusResponse(BaseModel):
+    msg: str
+    description: str
+    count: int
+    
 class Course(BaseModel):
     name: str
     credits: int
