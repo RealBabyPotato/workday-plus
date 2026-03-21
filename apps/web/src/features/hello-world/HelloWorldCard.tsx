@@ -1,4 +1,4 @@
-import { useQuery, type UseQueryResult } from '@tanstack/react-query'
+import { useQuery } from '@tanstack/react-query'
 
 import { fetchHello } from '../../api/hello'
 import { fetchTest } from '../../api/test'
@@ -18,8 +18,7 @@ export function HelloWorldCard() {
     queryFn: () => fetchTest(exampleId),
   })
 
-  const [num, setNum] = useState(0);
-  const [name, setName] = useState<String>("Jaden");
+
 
   return (
     <SectionCard
@@ -37,8 +36,6 @@ export function HelloWorldCard() {
                 : 'success'}
           </span>
         </p>
-
-        {num + num.toString()}
 
         {helloQuery.isError ? (
           <p className="rounded-lg bg-rose-50 p-3 text-rose-700">
