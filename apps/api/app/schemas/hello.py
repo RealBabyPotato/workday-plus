@@ -18,3 +18,9 @@ class ChungusResponse(BaseModel):
     msg: str
     description: str
     count: int
+    
+class Course(BaseModel):
+    name: str
+    credits: int
+    title: str
+    description: str
