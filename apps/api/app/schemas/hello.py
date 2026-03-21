@@ -13,3 +13,8 @@ class HelloResponse(BaseModel):
 class TestResponse(BaseModel):
     id: int
     title: str
+
+class ChungusResponse(BaseModel):
+    msg: str
+    description: str
+    count: int
