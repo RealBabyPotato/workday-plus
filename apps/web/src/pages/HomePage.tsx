@@ -1,9 +1,12 @@
 import { HelloWorldCard } from '../features/hello-world/HelloWorldCard'
 import { demoFeatureAreas } from '../lib/demo-data'
+import { AppNav } from '../components/AppNav'
+
 
 export function HomePage() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-6 py-10">
+      <AppNav />
       <section className="rounded-3xl bg-slate-950 px-8 py-10 text-white shadow-lg">
         <p className="text-sm uppercase tracking-[0.2em] text-sky-300">
           workday-plus
